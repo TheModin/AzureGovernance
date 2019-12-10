@@ -20,6 +20,12 @@
 
 [Challenges](https://github.com/faridabharmal/AzureGovernance/blob/master/Azure%20Governance%20Hack.docx?raw=true)
 
+## Resources for Challenges
+
+[Azure Policy](https://raw.githubusercontent.com/TheModin/AzureGovernance/master/policy_DenyGSeriesVMs.json)
+
+[Azure Blueprints](https://raw.githubusercontent.com/TheModin/AzureGovernance/master/template_StorageAccount.json)
+
 ## Instructions for Challenges
 
 [Management Group](https://github.com/faridabharmal/AzureGovernance/blob/master/Challenge%201%20-%20Management%20Group.docx?raw=true)
