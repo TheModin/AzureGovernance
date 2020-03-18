@@ -24,7 +24,9 @@
 
 [Azure Policy](https://raw.githubusercontent.com/TheModin/AzureGovernance/master/policy_DenyGSeriesVMs.json)
 
-[Azure Blueprints](https://raw.githubusercontent.com/TheModin/AzureGovernance/master/template_StorageAccount.json)
+[Azure Blueprints](https://raw.githubusercontent.com/TheModin/AzureGovernance/master/template_StorageAccount.json)  
+
+[Resource Graph](https://docs.microsoft.com/en-us/azure/governance/resource-graph/samples/starter)  
 
 ## Instructions for Challenges
 
