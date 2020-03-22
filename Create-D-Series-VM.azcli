@@ -1,0 +1,18 @@
+#Azure CLI commands to deploy the VMs used for the Azure Governance Policy Challenge
+AdminPassword='MyP@ssW0rd!!!!'  #Update password and make sure it follows the Azure password policy
+
+#Create a D-series Virtual Machine
+dSeriesVM="dseriesVm"
+
+#Create Resource Group for managed disk VM
+ResourceGroupName='gov-dseries-vm'
+az group create --name $ResourceGroupName --location westeurope
+
+az vm create \
+    --resource-group $ResourceGroupName \
+    --name $dSeriesVM \
+    --image win2019datacenter \
+    --admin-username azureuser \
+    --admin-password $AdminPassword \
+    --size Standard_DS1_v2 \
+    --public-ip-address ""

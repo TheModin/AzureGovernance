@@ -1,34 +1,36 @@
 #Azure CLI commands to deploy the VMs used for the Azure Governance Policy Challenge
-AdminPassword="MyP@ssW0rd!!!!"  #Update password and make sure it follows the Azure password policy
+AdminPassword='MyP@ssW0rd!!!!'  #Update password and make sure it follows the Azure password policy
 
 #Create Virtual Machine with unmanaged disk
-VmName="unmanageddiskVm"
+unmanagedVmName='unmanageddiskVm'
 
 #Create Resource Group for unmanaged disk VM
-ResourceGroupName="CreateVmunmanaged"
-az group create --name $ResourceGroupName --location westeurope
+unmanagedResourceGroupName='gov-unmanaged-vm'
+az group create --name $unmanagedResourceGroupName --location westeurope
 
 az vm create \
-    --resource-group $ResourceGroupName \
-    --name $VmName \
-    --image win2016datacenter \
+    --resource-group $unmanagedResourceGroupName \
+    --name $unmanagedVmName \
+    --image win2019datacenter \
     --admin-username azureuser \
     --admin-password $AdminPassword \
     --size Basic_A1 \
     --use-unmanaged-disk \
-    --storage-sku Standard_LRS
+    --storage-sku Standard_LRS \
+    --public-ip-address ""
 
 #Create Virtual Machine with managed disk
-VmName="ADMIN-01"
+managedVmName="manageddiskVm"
 
 #Create Resource Group for managed disk VM
-ResourceGroupName="Contoso_IaaS"
-az group create --name $ResourceGroupName --location westeurope
+managedResourceGroupName='gov-managed-vm'
+az group create --name $managedResourceGroupName --location westeurope
 
 az vm create \
-    --resource-group $ResourceGroupName \
-    --name $VmName \
-    --image win2016datacenter \
+    --resource-group $managedResourceGroupName \
+    --name $managedVmName \
+    --image win2019datacenter \
     --admin-username azureuser \
     --admin-password $AdminPassword \
-    --size Basic_A1 
+    --size Basic_A1 \
+    --public-ip-address ""
