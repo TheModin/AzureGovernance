@@ -1,12 +1,13 @@
 #Azure CLI commands to deploy the VMs used for the Azure Governance Policy Challenge
 AdminPassword='MyP@ssW0rd!!!!'  #Update password and make sure it follows the Azure password policy
+location='westeurope'
 
 #Create Virtual Machine with unmanaged disk
 unmanagedVmName='unmanageddiskVm'
 
 #Create Resource Group for unmanaged disk VM
 unmanagedResourceGroupName='gov-unmanaged-vm'
-az group create --name $unmanagedResourceGroupName --location westeurope
+az group create --name $unmanagedResourceGroupName --location $location
 
 az vm create \
     --resource-group $unmanagedResourceGroupName \
@@ -24,7 +25,7 @@ managedVmName="manageddiskVm"
 
 #Create Resource Group for managed disk VM
 managedResourceGroupName='gov-managed-vm'
-az group create --name $managedResourceGroupName --location westeurope
+az group create --name $managedResourceGroupName --location $location
 
 az vm create \
     --resource-group $managedResourceGroupName \
