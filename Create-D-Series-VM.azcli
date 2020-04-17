@@ -1,6 +1,11 @@
+#!/bin/bash
 #Set AzureSubscription
-AzureSubscription='7afbbf78-8e87-44c6-9919-a8b517dc9fec'
-az account set -s $AzureSubscription
+az account list --output table
+echo Enter Subscription ID:
+read AzureSubscription
+echo Switching to Subscription: $AzureSubscription
+az account set --subscription $AzureSubscription
+az account show
 
 #Azure CLI commands to deploy the VMs used for the Azure Governance Policy Challenge
 AdminPassword='MyP@ssW0rd!!!!'  #Update password and make sure it follows the Azure password policy
