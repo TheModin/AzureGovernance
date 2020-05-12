@@ -50,28 +50,30 @@ This content has been targeted to internal Microsoft, Partners and Customers loo
 2. Create a new Azure AD Tenant.
 3. Create new Azure Trial Subscription.
 
-## Delivery Schedule
+## Delivery Schedule  
 
-### 09:00 – 09:30 : Kickoff & Introductions
+### 09:00 – 09:30 : Kickoff & Introductions  
 
-### 09:30 – 10:30 : Azure Governance Overview Presentation (Management Groups, RBAC, Policy, Blueprints, Cost Management and Resource Graph)
+### 09:30 – 10:00 : Azure Governance Overview Presentation  
 
-### 10:30 - 10:45 : Break
+### 10:00 - 10:45 : Management Groups  
 
-### 10:45 – 11:30 : Management Groups Challenge
+### 10:45 - 11:00 : Break  
 
-### 11:30 – 12:00 : Azure Policy Challenge
+### 11:00 - 11:30 : RBAC  
 
-### 12:00 – 13:00 : Lunch
+### 11:30 - 12:00 : Resource locks  
 
-### 13:00 – 14:00 : Azure Policy Challenge (continued)
+### 12:00 - 13:00 : Lunch  
 
-### 14:00 – 15:00 : Azure Blueprint Challenge
+### 13:00 - 14:00 : Azure Policy  
 
-### 15:00 – 15:15 : Break
+### 14:00 - 14:45 : Azure Blueprints
 
-### 15:15 – 16:00 : Azure Cost Management Challenge
+### 14:45 – 15:00 : Break
 
-### 16:00 – 16:45 : Azure Resource Graph Challenge
+### 15:00 – 16:00 : Azure Cost Management  
 
-### 16:45 - 17:00 : Wrap up
+### 16:00 – 16:40 : Azure Resource Graph  
+
+### 16:40 - 17:00 : Wrap up
